@@ -4,8 +4,8 @@ const progressBar = document.querySelector(".indicator");
 
 let latestStep = 1;
 
-const updateSteps = (e) => {
-  latestStep = e.target.id === "next" ? ++latestStep : --latestStep;
+const updateSteps = (event) => {
+  latestStep = event.target.id === "next" ? ++latestStep : --latestStep;
 
   rings.forEach((ring, index) => {
     ring.classList[`${index < latestStep ? "add" : "remove"}`]("active");
