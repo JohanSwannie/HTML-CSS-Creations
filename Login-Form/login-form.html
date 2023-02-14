@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!-- Coding by CodingLab || www.codinglabweb.com -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jaldi&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="login-form.css" />
+    <title>Login Form</title>
+  </head>
+  <body>
+    <section class="folder">
+      <div class="form existing-client">
+        <header>Login</header>
+        <form action="#">
+          <input type="text" placeholder="Email" required />
+          <input type="password" placeholder="Password" required />
+          <a href="#">Forgot password?</a>
+          <input type="submit" value="Login" />
+        </form>
+      </div>
+
+      <div class="form new-client">
+        <header>Sign Up</header>
+        <form action="#">
+          <input type="text" placeholder="Full Name" required />
+          <input type="text" placeholder="Email" required />
+          <input type="password" placeholder="Password" required />
+          <div class="checkbox">
+            <input type="checkbox" id="conditions" />
+            <label for="conditions"
+              >I hereby accept all the terms & conditions</label
+            >
+          </div>
+          <input type="submit" value="Sign Up" />
+        </form>
+      </div>
+
+      <script>
+        const container = document.querySelector(".folder");
+        const headerNewClient = document.querySelector(".new-client header");
+        const headerExistingClient = document.querySelector(
+          ".existing-client header"
+        );
+
+        headerExistingClient.addEventListener("click", () => {
+          container.classList.add("active");
+        });
+
+        headerNewClient.addEventListener("click", () => {
+          container.classList.remove("active");
+        });
+      </script>
+    </section>
+  </body>
+</html>
