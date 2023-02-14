@@ -16,7 +16,7 @@
     <label for="checker"></label>
     <div class="background">
       <h3>Click to change to <span id="change">Dark</span> Mode</h3>
-      <p>
+      <p id="loremText">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti error
         voluptatibus accusantium, molestias cupiditate neque laborum assumenda
         consequatur voluptas delectus eaque rerum reprehenderit provident est,
@@ -45,12 +45,14 @@
   </body>
   <script>
     const toggleControl = () => {
-      const inputChecked = document.getElementById("checker");
       const spanText = document.getElementById("change");
+      const loremBuddy = document.getElementById("loremText");
       if (spanText.innerHTML === "Dark") {
         spanText.innerHTML = "Light";
+        loremBuddy.style.columnRule = "1px solid #FFF";
       } else if (spanText.innerHTML === "Light") {
         spanText.innerHTML = "Dark";
+        loremBuddy.style.columnRule = "1px solid #000";
       }
     };
   </script>
