@@ -12,8 +12,8 @@
     <title>Toggle between Dark and Light Modes</title>
   </head>
   <body>
-    <input type="checkbox" id="dark-mode" onclick="toggleControl()" />
-    <label for="dark-mode"></label>
+    <input type="checkbox" id="checker" onclick="toggleControl()" />
+    <label for="checker"></label>
     <div class="background">
       <h3>Click to change to <span id="change">Dark</span> Mode</h3>
       <p>
@@ -45,7 +45,7 @@
   </body>
   <script>
     const toggleControl = () => {
-      const inputChecked = document.getElementById("dark-mode");
+      const inputChecked = document.getElementById("checker");
       const spanText = document.getElementById("change");
       if (spanText.innerHTML === "Dark") {
         spanText.innerHTML = "Light";
