@@ -19,7 +19,8 @@ label {
   width: 8.5rem;
   height: 3.55rem;
   display: block;
-  background: #d9d9d9;
+  background: #f5f2f2;
+  border: .1px solid rgba(0, 0, 0, .2);
   border-radius: 6.25rem;
   cursor: pointer;
   box-shadow: inset 0px .25rem 1rem rgba(0,0,0,0.3), inset 0px -.25rem 1rem rgba(255,255,255,0.4);
@@ -30,7 +31,7 @@ label:after {
   position: absolute;
   height: 3.05rem;
   width: 3.05rem;
-  background: #f2f2f2;
+  background: #f3f3f3;
   border-radius: 6.25rem;
   top: .25rem;
   left: .25rem;
@@ -45,7 +46,8 @@ input:checked ~ label:after {
 }
 
 input:checked ~ label {
-    background: #242424;
+  background: #242424;
+  border: .1px solid rgba(255, 255, 255, .2);
 }
 
 .background {
