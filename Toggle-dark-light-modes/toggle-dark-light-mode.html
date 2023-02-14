@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jaldi&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="toggle-dark-light-mode.css" />
+    <title>Toggle between Dark and Light Modes</title>
+  </head>
+  <body>
+    <input type="checkbox" id="dark-mode" onclick="toggleControl()" />
+    <label for="dark-mode"></label>
+    <div class="background">
+      <h3>Click to change to <span id="change">Dark</span> Mode</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti error
+        voluptatibus accusantium, molestias cupiditate neque laborum assumenda
+        consequatur voluptas delectus eaque rerum reprehenderit provident est,
+        excepturi et tempore dolor harum! Lorem ipsum, dolor sit amet
+        consectetur adipisicing elit. Ullam aspernatur deleniti dolorem, ad cum
+        corporis, sed rem laudantium neque suscipit numquam possimus, assumenda
+        facilis blanditiis explicabo deserunt quo. Itaque, natus! Lorem ipsum
+        dolor sit amet consectetur, adipisicing elit. Doloremque odio aut amet
+        tempore alias dicta, aliquid esse error voluptatum, sed in
+        necessitatibus quia nostrum earum, delectus excepturi iste. Perferendis,
+        quae? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
+        suscipit sapiente autem eius cupiditate porro non, adipisci iste impedit
+        quidem ad praesentium omnis ipsum delectus temporibus aut. Cupiditate,
+        amet nobis? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Voluptate cum repellat excepturi maxime enim id quibusdam praesentium
+        nulla, temporibus nisi quisquam amet iste dolor, explicabo, facilis eos?
+        Est, laborum amet! Lorem ipsum dolor sit, amet consectetur adipisicing
+        elit. Consectetur rerum dicta harum dolorum iure assumenda distinctio
+        beatae? Consequuntur amet corporis explicabo nobis alias illum, a aut
+        officia ratione, quae dolor? Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Alias veniam corrupti laborum earum in cumque nihil
+        quidem eos eius suscipit quas optio nobis temporibus, consectetur itaque
+        dolor repudiandae expedita nulla.
+      </p>
+    </div>
+  </body>
+  <script>
+    const toggleControl = () => {
+      const inputChecked = document.getElementById("dark-mode");
+      const spanText = document.getElementById("change");
+      if (spanText.innerHTML === "Dark") {
+        spanText.innerHTML = "Light";
+      } else if (spanText.innerHTML === "Light") {
+        spanText.innerHTML = "Dark";
+      }
+    };
+  </script>
+</html>
